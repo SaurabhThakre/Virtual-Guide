@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:background="@drawable/shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignStart="@+id/imageView1"
+        android:layout_alignEnd="@+id/imageView1"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="Get the Details of the Landmark/Monument by clicking the picture instantly"
+        android:textColor="#fff" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/goCamera"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/button4"
+        android:text="Open Camera"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000066"
+    tools:context="com.virtual_guide.virtualguide.MapsActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="8dp"
+        android:layout_marginTop="30dp"
+        map:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:context="com.virtual_guide.virtualguide.MapsActivity" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        map:layout_constraintRight_toRightOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            map:layout_constraintLeft_toLeftOf="parent"
+            map:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="10dp"
+            map:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <Button
+                android:id="@+id/btnRestaurants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:background="@drawable/button6"
+                android:layout_marginEnd="5dp"
+                android:text="@string/restaurants" />
+
+            <Button
+                android:id="@+id/btnMonuments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:background="@drawable/button6"
+                android:layout_marginEnd="5dp"
+                android:text="@string/monuments" />
+
+            <Button
+                android:id="@+id/btnATM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:background="@drawable/button6"
+                android:layout_marginEnd="5dp"
+                android:text="@string/atms" />
+
+            <Button
+                android:id="@+id/btnHospitals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:background="@drawable/button6"
+                android:layout_marginEnd="5dp"
+                android:text="@string/hospital" />
+
+            <Button
+                android:id="@+id/btnHotels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:background="@drawable/button6"
+                android:layout_marginEnd="5dp"
+                android:text="@string/hotels" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal"
+        map:layout_constraintBottom_toTopOf="@+id/map"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/txtPlace"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/shadow2"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColorLink="@color/colorPrimary"
+            android:hint="Places to find.." />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:background="@drawable/button4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:onClick="onClick"
+            android:text="@string/search" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

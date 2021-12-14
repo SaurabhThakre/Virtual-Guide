@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "680198212051",
+    "firebase_url": "https://virtualguide-184ba.firebaseio.com",
+    "project_id": "virtualguide-184ba",
+    "storage_bucket": "virtualguide-184ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680198212051:android:25fd973c29825f2ea40726",
+        "android_client_info": {
+          "package_name": "com.virtual_guide.virtualguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680198212051-l49kprsc2dtc65mic4vnf11tq5dm4kaq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.virtual_guide.virtualguide",
+            "certificate_hash": "5561b64b36acf06811bda833cfda5eb343c4053e"
+          }
+        },
+        {
+          "client_id": "680198212051-17m95qb2ivqg62khfoa0chj3pel26f2f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.virtual_guide.virtualguide",
+            "certificate_hash": "8e0af9499f4192b42b425739e16b7ab4cbbe4fa2"
+          }
+        },
+        {
+          "client_id": "680198212051-o4klalaaukgp7t994i6fsboi6pk28nvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA25jP9mWttfj4wRUL6LOJeyvQhNBnmD20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680198212051-o4klalaaukgp7t994i6fsboi6pk28nvn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

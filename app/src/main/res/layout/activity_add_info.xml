@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddInfo"
+    android:background="@drawable/back2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Click on Below image to upload image from storage"
+                    android:textAlignment="center"
+                    android:textColor="#fff"/>
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#ffffff"
+                    android:contentDescription="Select Image fom Storage"
+                    android:src="@drawable/addimg1"/>
+
+                <EditText
+                    android:id="@+id/imgdesc"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="350dp"
+                    android:padding="5dp"
+                    android:inputType="text"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:hint="Image Title and/or Description"
+                    android:background="@drawable/edit1"/>
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="350dp"
+                    android:padding="5dp"
+                    android:inputType="text"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Title"
+                    android:textAlignment="center"
+                    android:background="@drawable/edit1"/>
+
+                <EditText
+                    android:id="@+id/desc"
+                    android:layout_width="350dp"
+                    android:padding="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="10dp"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:hint="Add Your Text or Description of Landmark Here"
+                    android:background="@drawable/edit1">
+                </EditText>
+
+
+
+                <Button
+                    android:id="@+id/save"
+                    android:onClick="saveInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button4"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

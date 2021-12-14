@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#36d1dc</color>
+    <color name="colorPrimaryDark">#5b86e5</color>
+    <color name="diff">#FF80AB</color>
+    <color name="Primary">#BB86FC</color>
+    <color name="PrimaryDark">#00274C</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bar">#feb47b</color>
+    <color name="bar1">#ff7e5f</color>
+    <color name="dark">#121212</color>
+    <color name="dark2">#424242</color>
+    <color name="dark3">#88000000</color>
+    <color name="semi_transparent">#66000000</color>
+</resources>
